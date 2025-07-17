@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class EmployeeDepartment {
+    public static void main(String[] args) {
+        HashMap<Integer, String> empDept = new HashMap<>();
+        empDept.put(1, "HR");
+        empDept.put(2, "IT");
+        empDept.put(3, "Finance");
+
+        for (Map.Entry<Integer, String> entry : empDept.entrySet()) {
+            System.out.println("Employee ID: " + entry.getKey() + ", Department: " + entry.getValue());
+        }
+    }
+}

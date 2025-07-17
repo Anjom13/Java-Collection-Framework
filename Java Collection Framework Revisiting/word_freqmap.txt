@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class WordFrequency {
+    public static void main(String[] args) {
+        String text = "apple banana apple orange banana apple";
+        TreeMap<String, Integer> freqMap = new TreeMap<>();
+
+        for (String word : text.split("\\s+")) {
+            freqMap.put(word, freqMap.getOrDefault(word, 0) + 1);
+        }
+
+        System.out.println("Word Frequencies: " + freqMap);
+    }
+}
